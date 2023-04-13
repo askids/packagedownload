@@ -1,0 +1,16 @@
+
+
+Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=ldap_hostname)(PORT=ldap_port)))(CONNECT_DATA=(SERVICE_NAME=service_name)));User Id=username;Password=password;
+
+Data Source=(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=on)(FAILOVER=on)
+(ADDRESS=(PROTOCOL=TCP)(HOST=ldap_hostname1)(PORT=ldap_port1))
+(ADDRESS=(PROTOCOL=TCP)(HOST=ldap_hostname2)(PORT=ldap_port2))
+(ADDRESS=(PROTOCOL=TCP)(HOST=ldap_hostname3)(PORT=ldap_port3)))
+(CONNECT_DATA=(SERVICE_NAME=service_name)));User Id=username;Password=password;Directory Context=admin_context;
+
+Data Source=(DESCRIPTION=(ADDRESS_LIST=(LOAD_BALANCE=on)(FAILOVER=on)
+(ADDRESS=(PROTOCOL=TCP)(HOST=ldap_hostname)(PORT=123-234)))
+(CONNECT_DATA=(SERVICE_NAME=service_name)));User Id=username;Password=password;Directory Context=admin_context;
+
+https://stackoverflow.com/questions/67896316/how-to-connect-to-oracle-with-c-sharp-using-a-ldap-oid-connection-string
+https://stackoverflow.com/questions/14566632/how-do-i-query-ldap-from-c-sharp-to-resolve-oracle-tns-hostname-while-using-mana
