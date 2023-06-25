@@ -1,0 +1,10 @@
+msiexec /i singlestore-connector-odbc-1.1.2-win64.msi TARGETDIR="c:\apps" /qn /L*V "c:\temp\obdc.log"
+
+Windows Installer installed the product. Product Name: SingleStore ODBC Driver 64-bit. Product Version: 1.1.2. Product Language: 1033. Manufacturer: SingleStore. Installation success or error status: 0.
+
+msiexec /x singlestore-connector-odbc-1.1.2-win64.msi /qn /L*V "c:\temp\obdc_uninstall.log"
+
+Windows Installer removed the product. Product Name: SingleStore ODBC Driver 64-bit. Product Version: 1.1.2. Product Language: 1033. Manufacturer: SingleStore. Removal success or error status: 0.
+
+Singlestore ODBC ANSI Driver 1.01.02.00
+Singlestore ODBC Unicode Driver 1.01.02.00
